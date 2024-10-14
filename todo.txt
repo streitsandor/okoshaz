@@ -1,0 +1,20 @@
+==================================================
+                    TODO
+==================================================
+Téma: Okozház
+
+Oldalak:
+ - Főoldal
+ - Rólunk / Elérhetőség
+ - Galéria (dokumentum)
+ - Jelentkezés oldal (google sheet)
+
+
+
+==================================================
+                    Fontos
+==================================================
+Dokumentáció max 1 oldal
+Kell tartalmaznia PPT-t és google sheetet
+
+
