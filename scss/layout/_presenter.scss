@@ -1,0 +1,96 @@
+.presenter {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+
+    &-heading {
+        margin: 5rem 0;
+
+        &-text {
+            text-align: center;
+            font-size: size(lg) + 2rem;
+            font-weight: 300;
+            color: color(primary);
+        }
+    }
+
+    &-wrapper {
+        @include flexPosition;
+        flex-wrap: wrap;
+    }
+}
+
+.element {
+    position: relative;
+    display: inline-flex;
+    width: 80%;
+    height: fit-content;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+
+    &-left,
+    &-right {
+        max-width: 48%;
+    }
+
+    & img {
+        max-width: 100%;
+        border-radius: 14px;
+    }
+
+    &-xl-header {
+        font-size: size(xl) + 1rem;
+        margin-bottom: 2rem;
+
+        @include response(lg) {
+            font-size: size(lg);
+            margin-bottom: 2rem;
+        }
+
+        @include response(sm) {
+            font-size: size(md);
+            margin-bottom: 0;
+        }
+    }
+
+    &-header {
+        font-size: size(lg);
+        margin-bottom: 0.5rem;
+
+        @include response(lg) {
+            font-size: size(sm);
+            margin-bottom: 0;
+        }
+
+        @include response(sm) {
+            font-size: size(xs);
+        }
+    }
+
+    &-text {
+        font-size: size(md);
+
+        @include response(md) {
+            font-size: size(sm);
+        }
+
+        @include response(sm) {
+            font-size: size(xs);
+        }
+    }
+
+    /* &-description {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: transparentize(color(secondary), .4);
+        padding: 2rem;
+        border: .1rem solid color(primary);
+        border-radius: .5rem;
+        color: color(primary);
+        text-align: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 1s .5s;
+    } */
+}

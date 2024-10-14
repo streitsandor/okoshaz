@@ -16,6 +16,11 @@ html {
   }
 }
 
+%fullSpace {
+  width: 100%;
+  height: 100%;
+}
+
 .container {
   display: grid;
   grid-template-columns: minmax(6rem, 1fr) repeat(8, minmax(min-content, 16rem)) minmax(6rem, 1fr);

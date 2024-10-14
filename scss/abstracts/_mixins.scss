@@ -28,6 +28,12 @@
     align-items: $alignIte;
 }
 
+@mixin textStyles($transform: uppercase) {
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: $transform;
+}
+
 @mixin footerList {
     &-heading {
         font-size: size(lg);
