@@ -1,0 +1,2 @@
+# okoshaz
+Okosház csoportfeladat
