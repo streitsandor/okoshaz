@@ -210,7 +210,7 @@ html {
   transition: border 0.5s;
 }
 .contact .inputs-group input:focus:not([type=submit]) {
-  border: 0.1rem solid #9c6209;
+  border: 0.1rem solid #9c0909;
 }
 .contact .inputs-group-text {
   width: 50%;

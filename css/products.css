@@ -119,7 +119,6 @@ html {
 
 .presenter {
   grid-column: 1/-1;
-  grid-row: 3/4;
 }
 .presenter-heading {
   margin: 5rem 0;
@@ -139,11 +138,8 @@ html {
 
 .element {
   position: relative;
-  display: inline-flex;
-  width: 80%;
   height: -moz-fit-content;
   height: fit-content;
-  justify-content: space-between;
   margin-bottom: 4rem;
   /* &-description {
       position: absolute;
@@ -161,8 +157,35 @@ html {
       transition: all 1s .5s;
   } */
 }
+.element.split {
+  display: inline-flex;
+  width: 80%;
+  justify-content: space-between;
+}
 .element-left, .element-right {
   max-width: 48%;
+}
+.element.double {
+  display: grid;
+  max-width: 100%;
+  justify-content: center;
+}
+.element.double .row {
+  display: flex;
+  margin: 1rem;
+  text-align: center;
+  text-align: -webkit-center;
+}
+.element.double .row .col {
+  flex: auto;
+}
+.element.double .mini-icon {
+  max-width: 50px;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+.element.double .mini-icon-name {
+  font-size: 1.6rem;
 }
 .element img {
   max-width: 100%;
@@ -211,6 +234,26 @@ html {
   .element-text {
     font-size: 1.6rem;
   }
+}
+
+.badge {
+  background-color: #343434;
+  color: #ffe;
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 5px;
+}
+.badge:hover {
+  background-color: red;
+}
+
+.gallery {
+  grid-column: 1/-1;
+}
+.gallery .cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  place-content: space-around;
 }
 
 .footer {
@@ -311,7 +354,7 @@ html {
   transition: border 0.5s;
 }
 .contact .inputs-group input:focus:not([type=submit]) {
-  border: 0.1rem solid #9c6209;
+  border: 0.1rem solid #9c0909;
 }
 .contact .inputs-group-text {
   width: 50%;
@@ -468,8 +511,8 @@ html {
 }
 
 .card {
-  width: 33.3333%;
-  height: 30vw;
+  width: calc(33.3333333333% - 40px);
+  height: 25vw;
   position: relative;
   overflow: hidden;
 }
@@ -480,7 +523,7 @@ html {
   position: absolute;
   top: 0;
   left: -100%;
-  background-color: rgba(245, 177, 73, 0.6);
+  background-color: rgba(52, 52, 52, 0.6);
   color: #ffe;
   z-index: 10;
   display: flex;
@@ -537,14 +580,14 @@ html {
 .card-overlay-btn {
   width: 150px;
   height: 40px;
-  color: #f5b149;
+  color: #f54949;
   background-color: #ffe;
   font-family: "Josefin Sans", sans-serif;
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border: 1px solid #f5b149;
+  border: 1px solid #f54949;
   border-radius: 30px;
   outline: none;
   cursor: pointer;

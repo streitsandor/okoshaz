@@ -1,6 +1,10 @@
-.gallery { // TODO ezt lehet át kéne nevezni? _products vs products
+.gallery {
+    grid-column: 1 / -1;
+    //grid-row: 3 / 4;
+
     .cards-wrapper {
         display: flex;
         flex-wrap: wrap;
+        place-content: space-around;
     }
 }
