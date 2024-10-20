@@ -661,11 +661,7 @@ html {
   transform: rotateZ(-45deg);
 }
 
-.section-map {
-  width: 100%;
-}
-
-.contact-map {
-  width: 500px;
-  height: 500px;
-}/*# sourceMappingURL=contactus.css.map */
+iframe {
+  width: 80vw;
+  height: 3000px;
+}/*# sourceMappingURL=survey.css.map */
