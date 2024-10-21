@@ -222,10 +222,11 @@ html {
   margin: 5rem 0;
 }
 .presenter-heading-text {
+  font-family: "General Sans", sans-serif;
   text-align: center;
   font-size: 4.5rem;
-  font-weight: 300;
-  color: #333;
+  font-weight: 600;
+  color: #003719;
 }
 .presenter-wrapper {
   display: flex;
@@ -288,6 +289,9 @@ html {
 .element img {
   max-width: 100%;
   border-radius: 14px;
+}
+.element-header, .element-xl-header {
+  color: #003719;
 }
 .element-xl-header {
   font-size: 4rem;
@@ -377,6 +381,9 @@ html {
 }
 .footer-nav-link:hover {
   color: #8c8c8c;
+}
+.footer-nav-logo {
+  width: 150px;
 }
 
 .contact-list-heading {
@@ -530,7 +537,8 @@ html {
   text-align: center;
 }
 .heading-text {
-  font-family: "Great Vibes", cursive;
+  color: #003719;
+  font-family: "Rowdies", sans-serif;
   font-size: 6rem;
   font-weight: lighter;
   letter-spacing: 0.5rem;

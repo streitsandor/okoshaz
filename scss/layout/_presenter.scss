@@ -6,10 +6,11 @@
         margin: 5rem 0;
 
         &-text {
+            font-family: "General Sans", sans-serif;
             text-align: center;
             font-size: size(lg) + 2rem;
-            font-weight: 300;
-            color: color(primary);
+            font-weight: 600;
+            color: color(senary);
         }
     }
 
@@ -65,6 +66,11 @@
     & img {
         max-width: 100%;
         border-radius: 14px;
+    }
+
+    &-header,
+    &-xl-header {
+        color: color(senary);
     }
 
     &-xl-header {

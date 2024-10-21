@@ -13,6 +13,10 @@
 
 .footer-nav {
     @include footerList;
+
+    &-logo {
+        width: 150px;
+    }
 }
 
 .contact-list {

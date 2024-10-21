@@ -145,6 +145,9 @@ html {
 .footer-nav-link:hover {
   color: #8c8c8c;
 }
+.footer-nav-logo {
+  width: 150px;
+}
 
 .contact-list-heading {
   font-size: 2.5rem;
@@ -297,7 +300,8 @@ html {
   text-align: center;
 }
 .heading-text {
-  font-family: "Great Vibes", cursive;
+  color: #003719;
+  font-family: "Rowdies", sans-serif;
   font-size: 6rem;
   font-weight: lighter;
   letter-spacing: 0.5rem;
