@@ -136,6 +136,13 @@ html {
   align-items: center;
   flex-wrap: wrap;
 }
+.presenter-wrapper-AlignLeft {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2em;
+}
 
 .element {
   position: relative;
@@ -165,6 +172,10 @@ html {
 }
 .element-left, .element-right {
   max-width: 48%;
+}
+.element-leftWithPadding, .element-rightWithPadding {
+  max-width: 48%;
+  padding: 2em 0 2em 0;
 }
 .element.double {
   display: grid;
