@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Rowdies|Josefin+Sans:300,400,600" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
         integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous" />
-    <link rel="stylesheet" href="../css/gallery.css" />
+    <link rel="stylesheet" href="../css/contactus.css" />
     <title>Okosház</title>
 </head>
 
@@ -18,7 +18,7 @@
         <!--header-->
         <header class="header">
             <div class="heading">
-                <h1 class="heading-text" href="../index.html">Okosház</h1>
+                <a href="../index.html"  class="second-nav-link"><h1 class="heading-text">Okosház</h1></a>
             </div>
 
             <nav class="second-nav">
@@ -56,7 +56,7 @@
                         </ul>
                     </li>
                     <li class="second-nav-item">
-                        <a href="references.html" class="second-nav-link">
+                        <a href="references.html#" class="second-nav-link">
                             Referenciák
                         </a>
                     </li>
@@ -71,7 +71,7 @@
                         </a>
                     </li>
                     <li class="second-nav-item">
-                        <a href="contactus.html" class="second-nav-link">
+                        <a href="#" class="second-nav-link">
                             Kapcsolat
                         </a>
                     </li>
@@ -79,14 +79,88 @@
             </nav>
         </header>
         <!--end of header-->
-        <div class= "section">
-            <H1>Gallery</H1>
-        </div>
-        
+
+        <!--presenter-->
+        <section class="presenter">
+            <div class="presenter-heading">
+                <h1 class="presenter-heading-text">Elérhetőségek, céginformációk</h1>
+            </div>
+            <div class="presenter-wrapper">
+                <div class="element split">
+                    <div class="element-left">
+                        <h2 class="element-header">
+                            Központi iroda címe:
+                        </h2>
+                        <p class="element-text">
+                            1111, Budapest, Lehetetlen utca 99.
+                        </p>
+                        <p class="placeholder">&nbsp;</p>
+                        <h2 class="element-header">
+                            Nyitvatartás
+                        </h2>
+                        <p class="element-text">
+                            Hétfőtől - csütörtökig: 8.00-16.00-ig<br>
+                            Pénteken: 8.00-14.00-ig
+                        </p>
+                        <p class="placeholder">&nbsp;</p>
+                        <h2 class="element-header">
+                            Céginformációk
+                        </h2>
+                        <p class="element-text">
+                            cégnév: Okos-ház Kft.<br>
+                            adószám: 13531168-2-09<br>
+                            cégjegyzékszám: 01-01-123456<br>
+                            bankszámlaszám: 12345678-12345678-12345678<br>
+                        </p>
+                        <p class="placeholder">&nbsp;</p>
+                        <p class="placeholder">&nbsp;</p>
+                        <p class="element-text">
+                            Amennyiben felkeltettük érdeklődését, kérjük töltse ki az alábbi linken elérhető kérdőívet, hogy munkatársunk minél hamarabb fel tudja venni Önnel a kapcsolatot:
+                            <a href="./survey.html">Kérdőív</a>
+                        </p>
+
+
+                    </div>
+                    <div class="element-right">
+                        <div class="section-map">
+                            <div class="contact-map" id="map">
+                                <script>
+                                    (g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
+                                        ({ key: "AIzaSyDU6reEHlN2SkLDi4qbFKtQxxI-Lv_Rp-4", v: "weekly" });
+
+                                    let map;
+
+                                    async function initMap() {
+                                        const position = { lat: 47.43, lng: 19.05 };
+                                        const { Map } = await google.maps.importLibrary("maps");
+                                        const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+
+                                        map = new Map(document.getElementById("map"), {
+                                            zoom: 10,
+                                            center: position,
+                                            mapId: "DEMO_MAP_ID",
+                                        });
+
+                                        const marker = new AdvancedMarkerElement({
+                                            map: map,
+                                            position: position,
+                                            title: "Okos-ház Kft.",
+                                        });
+                                    }
+                                    initMap();
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of presenter-->
+
         <!--footer-->
         <footer class="footer">
             <div class="footer-nav-wrapper">
-                <img src="../images/logo3.png" class="footer-nav-logo" alt="Cég logó">
+
                 <ul class="footer-nav">
                     <li class="footer-nav-item">
                         <a href="references.html" class="footer-nav-link">
@@ -121,11 +195,9 @@
                     Iratkozzon fel hírlevelünkre!
                 </h2>
 
-
                 <form>
 
                     <div class="inputs-group">
-
                         <input type="email" class="inputs-group-email" placeholder="Your Email Address">
                         <input type="submit" class="inputs-group-btn" value="Sign Up">
                     </div>
