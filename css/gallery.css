@@ -112,6 +112,140 @@ html {
   }
 }
 
+.presenter {
+  grid-column: 1/-1;
+}
+.presenter-heading {
+  margin: 5rem 0;
+}
+.presenter-heading-text {
+  font-family: "General Sans", sans-serif;
+  text-align: center;
+  font-size: 4.5rem;
+  font-weight: 600;
+  color: #003719;
+}
+.presenter-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.element {
+  position: relative;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 4rem;
+  /* &-description {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: transparentize(color(secondary), .4);
+      padding: 2rem;
+      border: .1rem solid color(primary);
+      border-radius: .5rem;
+      color: color(primary);
+      text-align: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 1s .5s;
+  } */
+}
+.element.split {
+  display: inline-flex;
+  width: 80%;
+  justify-content: space-between;
+}
+.element-left, .element-right {
+  max-width: 48%;
+}
+.element.double {
+  display: grid;
+  max-width: 100%;
+  justify-content: center;
+}
+.element.double .row {
+  display: flex;
+  margin: 1rem;
+  text-align: center;
+  text-align: -webkit-center;
+}
+.element.double .row .col {
+  flex: auto;
+}
+.element.double .mini-icon {
+  max-width: 50px;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+.element.double .mini-icon-name {
+  font-size: 1.6rem;
+}
+.element img {
+  max-width: 100%;
+  border-radius: 14px;
+}
+.element-header, .element-xl-header {
+  color: #003719;
+}
+.element-xl-header {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+@media (max-width: 1000px) {
+  .element-xl-header {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 560px) {
+  .element-xl-header {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+}
+.element-header {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+@media (max-width: 1000px) {
+  .element-header {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 560px) {
+  .element-header {
+    font-size: 1.6rem;
+  }
+}
+.element-text {
+  font-size: 2rem;
+}
+@media (max-width: 760px) {
+  .element-text {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 560px) {
+  .element-text {
+    font-size: 1.6rem;
+  }
+}
+
+.badge {
+  background-color: #343434;
+  color: #ffe;
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 5px;
+}
+.badge:hover {
+  background-color: red;
+}
+
 .footer {
   grid-column: 1/-1;
   grid-row: 4/5;

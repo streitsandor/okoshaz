@@ -112,109 +112,6 @@ html {
   }
 }
 
-.slideshow {
-  grid-column: 1/-1;
-  grid-row: 2/3;
-  position: relative;
-  width: 100%;
-  height: 80vh;
-}
-@media (max-width: 1200px) {
-  .slideshow {
-    height: 70vh;
-  }
-}
-@media (max-width: 1000px) {
-  .slideshow {
-    height: 60vh;
-  }
-}
-@media (max-width: 760px) {
-  .slideshow {
-    height: 50vh;
-  }
-}
-.slideshow-slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: inherit;
-  height: inherit;
-  visibility: hidden;
-  opacity: 0;
-  animation: slideshow 20s linear infinite;
-}
-.slideshow-slide img {
-  width: inherit;
-  height: inherit;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.slideshow-content {
-  background-color: rgba(255, 255, 238, 0.9);
-  position: absolute;
-  bottom: 6rem;
-  left: 6rem;
-  right: 6rem;
-  max-width: 40rem;
-  padding: 5rem;
-}
-@media (max-width: 1000px) {
-  .slideshow-content {
-    padding: 2rem;
-  }
-}
-.slideshow-content h2 {
-  font-size: 4.2rem;
-  color: #333;
-}
-.slideshow-content p {
-  margin: 1rem 0;
-  font-size: 1.8rem;
-}
-
-.slideshow-slide:nth-child(1) {
-  animation-delay: 0s;
-}
-
-.slideshow-slide:nth-child(2) {
-  animation-delay: 4s;
-}
-
-.slideshow-slide:nth-child(3) {
-  animation-delay: 8s;
-}
-
-.slideshow-slide:nth-child(4) {
-  animation-delay: 12s;
-}
-
-.slideshow-slide:nth-child(5) {
-  animation-delay: 16s;
-}
-
-@keyframes slideshow {
-  0% {
-    visibility: hidden;
-    opacity: 0;
-  }
-  2% {
-    visibility: visible;
-    opacity: 1;
-  }
-  18% {
-    visibility: visible;
-    opacity: 1;
-  }
-  20% {
-    visibility: hidden;
-    opacity: 0;
-  }
-  100% {
-    visibility: hidden;
-    opacity: 0;
-  }
-}
 .presenter {
   grid-column: 1/-1;
 }
@@ -222,10 +119,11 @@ html {
   margin: 5rem 0;
 }
 .presenter-heading-text {
+  font-family: "General Sans", sans-serif;
   text-align: center;
   font-size: 4.5rem;
-  font-weight: 300;
-  color: #333;
+  font-weight: 600;
+  color: #003719;
 }
 .presenter-wrapper {
   display: flex;
@@ -288,6 +186,9 @@ html {
 .element img {
   max-width: 100%;
   border-radius: 14px;
+}
+.element-header, .element-xl-header {
+  color: #003719;
 }
 .element-xl-header {
   font-size: 4rem;
@@ -377,6 +278,9 @@ html {
 }
 .footer-nav-link:hover {
   color: #8c8c8c;
+}
+.footer-nav-logo {
+  width: 150px;
 }
 
 .contact-list-heading {
@@ -530,7 +434,8 @@ html {
   text-align: center;
 }
 .heading-text {
-  font-family: "Great Vibes", cursive;
+  color: #003719;
+  font-family: "Rowdies", sans-serif;
   font-size: 6rem;
   font-weight: lighter;
   letter-spacing: 0.5rem;
