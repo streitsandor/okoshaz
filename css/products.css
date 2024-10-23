@@ -136,6 +136,9 @@ html {
   align-items: center;
   flex-wrap: wrap;
 }
+.presenter-wrapper-block {
+  display: block;
+}
 .presenter-wrapper-AlignLeft {
   display: flex;
   justify-content: left;

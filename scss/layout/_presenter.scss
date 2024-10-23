@@ -19,6 +19,10 @@
         flex-wrap: wrap;
     }
 
+    &-wrapper-block {
+        display: block;
+    }
+
     &-wrapper-AlignLeft {
         @include flexPosition(left);
         flex-wrap: wrap;

@@ -1,0 +1,67 @@
+.card {
+    height: 25vw;
+    margin: 2rem;
+    position: relative;
+    overflow: hidden;
+
+    &-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 14px;
+        color: color(secondary);
+        z-index: 10;
+        @include flexPosition(end, baseline);
+        flex-direction: column;
+        @extend %fullSpace;
+        transition: all .5s;
+
+        &:hover {
+            background-color: rgba(color(quinary), .7);
+        }
+
+        &-heading {
+            font-family: "Rowdies", sans-serif;
+            font-size: 35px;
+            @include textStyles(capitalize);
+
+            @media(max-width: 900px) {
+                font-size: 25px;
+            }
+
+            @media(max-width: 650px) {
+                font-size: 15px;
+            }
+
+            @media(max-width: 500px) {
+                display: none;
+            }
+        }
+
+        &-paragraph {
+            font-family: "Rowdies", sans-serif;
+            font-style: italic;
+            quotes: "„" "“";
+            font-size: 20px;
+            margin: 0 0 20px 20px;
+
+            @media(max-width: 900px) {
+                font-size: 15px;
+            }
+
+            @media(max-width: 650px) {
+                font-size: 10px;
+            }
+
+            @media(max-width: 500px) {
+                display: none;
+            }
+        }
+    }
+
+    &-img {
+        @extend %fullSpace;
+        object-fit: cover;
+        opacity: .9;
+    }
+}
