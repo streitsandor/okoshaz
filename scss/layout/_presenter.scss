@@ -22,6 +22,12 @@
     &-wrapper-block {
         display: block;
     }
+
+    &-wrapper-AlignLeft {
+        @include flexPosition(left);
+        flex-wrap: wrap;
+        margin: 2em;
+    }
 }
 
 .element {
@@ -38,6 +44,12 @@
     &-left,
     &-right {
         max-width: 48%;
+    }
+
+    &-leftWithPadding,
+    &-rightWithPadding {
+        max-width: 48%;
+        padding: 2em 0 2em 0;
     }
 
     &.double {
