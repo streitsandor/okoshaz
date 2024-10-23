@@ -18,6 +18,10 @@
         @include flexPosition;
         flex-wrap: wrap;
     }
+
+    &-wrapper-block {
+        display: block;
+    }
 }
 
 .element {
